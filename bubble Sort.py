@@ -1,4 +1,8 @@
 # bubble sort using recurance
+
+
+
+
 l = [50,3,9,34,1]
 
 def bsort(l):

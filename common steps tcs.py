@@ -25,13 +25,15 @@ def ways(N):
 print(ways(N))
 """
 *****************************************************************************
-"""
-# def ways(N):
-#     ways = []
-#     ways = [0]*(N+1)
-#     ways[0] = 1
-#     ways[1] = 1
-#     ways[2] = 2
-#     for i in range(3,N+1):
-#         ways[i] = ways[i-3]+ways[i-2]+ways[i-1]
-# print(ways(N))
+          using Dynamic Programmimg """
+def Ways(N):
+    ways = []
+    ways = [0]*(N+1)
+    ways[0] = 1
+    ways[1] = 1
+    ways[2] = 2
+    for i in range(3,N+1):
+        ways[i] = ways[i-3]+ways[i-2]+ways[i-1]
+    return max (ways)
+N = int(input())
+print(Ways(N))

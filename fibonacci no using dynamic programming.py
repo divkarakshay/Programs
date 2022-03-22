@@ -17,5 +17,5 @@ def fib(n,memoization ={}):
   print(" all memo",memoization)
   return memoization[n]
 
-print(fib(8))
-# print(fib(50))
+# print(fib(8))
+print(fib(50))
